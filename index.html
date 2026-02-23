@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Miningvest</title>
+    <title>MiningVest</title>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <style>
-        /* Remove all browser defaults */
+        /* CSS Reset to eliminate all spacing */
         * {
             margin: 0;
             padding: 0;
@@ -15,8 +19,8 @@
         body, html {
             height: 100%;
             width: 100%;
-            overflow: hidden; /* Stops the parent page from scrolling */
-            background-color: #000; /* Matches the site's dark theme */
+            overflow: hidden; /* Important: stops the container from scrolling */
+            background-color: #0b0e11; /* Matches the dark background in your image */
         }
 
         iframe {
@@ -27,7 +31,7 @@
             height: 100%;
             border: none;
             display: block;
-            /* Ensures smooth momentum scrolling on iOS */
+            /* Ensures smooth scrolling behavior on mobile */
             -webkit-overflow-scrolling: touch;
         }
     </style>
@@ -36,8 +40,8 @@
 
     <iframe 
         src="https://miningvest.lovable.app" 
-        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        loading="lazy">
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
     </iframe>
 
 </body>
