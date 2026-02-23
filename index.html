@@ -2,21 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Ensures proper scaling on mobile devices and disables user zoom (optional) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>MiningVest – Embedded</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miningvest</title>
     <style>
-        /* Reset margins and paddings, make the body full screen */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
-            overflow: hidden;        /* Prevents any page scrollbars */
-            background-color: #fff;   /* Background shown while iframe loads */
+            overflow: hidden; /* Prevents double scrollbars */
         }
-
-        /* The iframe covers the entire viewport */
         iframe {
             position: absolute;
             top: 0;
@@ -25,31 +20,11 @@
             height: 100%;
             border: none;
         }
-
-        /* Simple fallback message (only shown if iframe is not supported) */
-        .fallback {
-            display: none;
-            text-align: center;
-            padding: 20px;
-            font-family: sans-serif;
-        }
     </style>
 </head>
 <body>
-    <!-- 
-        The iframe loads your website.
-        Replace the 'src' URL if needed.
-    -->
-    <iframe 
-        src="https://miningvest.lovable.app/" 
-        loading="lazy" 
-        title="MiningVest"
-    >
-        <!-- Fallback content for very old browsers or if iframes are disabled -->
-        <p class="fallback">
-            Your browser does not support iframes. 
-            <a href="https://miningvest.lovable.app/">Click here</a> to visit the site.
-        </p>
-    </iframe>
+
+    <iframe src="https://miningvest.lovable.app" allowfullscreen></iframe>
+
 </body>
 </html>
